@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Counter</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: rosybrown;
+        }
+        
+        button {
+            width: 130px;
+            height: 40px;
+            border-radius: 30%;
+            box-shadow: 10px 10px 10px blanchedalmond;
+            background-color: lightcoral;
+            font-size: large;
+        }
+        
+        h1,
+        h3 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+
+
+
+
+    <script>
+        var count = 0;
+
+        function myFunction() {
+
+            count++;
+            document.getElementById("header").innerHTML = count + " click!";
+
+        }
+
+        function myFunc() {
+
+            count--;
+            document.getElementById("header").innerHTML = count + " click!";
+
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+
+
+    <h1>Click here to increase and decrease</h1>
+    <button onclick="myFunction()">Counter</button>
+    <button onclick="myFunc()">Decrease</button>
+    <h3 id="header"></h3>
+
+</body>
